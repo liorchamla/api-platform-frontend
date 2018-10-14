@@ -1,0 +1,5 @@
+<div class="text-center">
+  <img [src]="details.picture" (load)="isImgLoaded = true" [ngStyle]="{'display': isImgLoaded ? 'block' : 'none'}" class="img-fluid avatar">
+  <h2>{{details.name}}</h2>
+  <a [routerLink]="[details.id]" class="btn btn-block btn-primary">Plus d'infos !</a>
+</div>

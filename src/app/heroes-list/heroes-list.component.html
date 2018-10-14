@@ -1,0 +1,12 @@
+<h1>Nos super heros !</h1>
+
+<ng-container *ngIf="(heroes$ | async) as heroes; else loadingTemplate">
+  <div class="row">
+    <div class="col-3" *ngFor="let hero of heroes">
+      <app-hero [details]="hero"></app-hero>
+    </div>
+  </div>
+</ng-container>
+<ng-template #loadingTemplate>
+  loading ...
+</ng-template>

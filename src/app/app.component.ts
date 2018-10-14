@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { map } from 'rxjs/internal/operators';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
